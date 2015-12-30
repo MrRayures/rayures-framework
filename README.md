@@ -17,7 +17,7 @@ You need to have `node`, `npm`, `gulp` and `bower` installed locally to run this
 
 Set up your project in your code directory
 
-    git clone git@github.com:MrRayures/rayures-framework.git your-project-folder
+    git clone https://github.com/MrRayures/rayures-framework.git your-project-folder
 
 Initialization
 
