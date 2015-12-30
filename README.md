@@ -24,7 +24,7 @@ Initialization
     npm install
     bower install
 
-Compilation, auto-reloading server and watch on all files
+Compilation and watch on all files
 
     gulp
 
