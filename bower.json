@@ -1,0 +1,15 @@
+{
+  "name": "rayures-framework",
+  "version": "0.0.1",
+  "authors": [
+    "Francois Leproust <mrrayures@gmail.com>"
+  ],
+  "description": "A simple html/scss framework powered by Gulp for my projects",
+  "dependencies": {
+    "neat"                         : "latest",
+    "bourbon"                      : "latest",
+    "html5shiv"                    : "latest",
+    "jquery"                       : "latest"
+  }
+}
+

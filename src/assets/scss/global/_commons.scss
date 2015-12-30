@@ -1,0 +1,113 @@
+/*-----------------------------------------------------------------------------------------------------
+    [commons]
+-------------------------------------------------------------------------------------------------------*/
+
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/*
+::-webkit-selection { background : #ccc; }
+::-moz-selection { background : #ccc; }
+::selection { background : #ccc; }
+*/
+
+body {  
+  background: #FFF; 
+}
+
+a { 
+  text-decoration: none; 
+  color: #000; 
+  &:hover { 
+    color: $primary;
+    text-decoration: underline; 
+  }
+}
+
+ul, 
+ol { 
+  margin: 0 0 24px 20px;
+}
+
+ul ul { 
+  margin: 0 0 0 20px;
+}
+
+ul li,
+ol li{
+  line-height: 180%;
+  margin-bottom: 20px;
+}
+
+ol {}
+
+p {}
+
+img { 
+  height: auto; 
+  max-width: 100%; 
+  display: block;
+  @include mq(small) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+blockquote {
+  color: $body-font;
+  font-style: italic;
+  font-family: $georgia;
+  font-size: 18px;
+  line-height: 170%;
+  p {
+    &:before {
+      content: " “ ";
+      color: $grey-light;
+    }
+    &:after {
+      content: " ” ";
+      color: $grey-light;
+    }
+  }
+}
+
+hr {
+  background: $grey-light;
+  border:none;
+  height: 1px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  th {
+    border: 1px solid gray;
+    padding: 0.2em;
+    text-align: left;
+  }
+  td {
+    border: 1px solid gray;
+    padding: 0.2em;
+  }
+}
+
+.txtleft { 
+  text-align: left; 
+}
+
+.txtright { 
+  text-align: right; 
+}
+
+.txtcenter { 
+  text-align: center; 
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.main {}
+.wrapper {}
+
+
+
+

@@ -1,0 +1,28 @@
+/*-----------------------------------------------------------------------------------------------------
+    [helpers]
+
+-------------------------------------------------------------------------------------------------------*/
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.desktop-only {
+  @include mq(small) {
+    display: none !important;
+  }
+}
+.mobile-only { 
+  display: none !important; 
+  @include mq(small) {
+    display: block !important;
+  }
+}

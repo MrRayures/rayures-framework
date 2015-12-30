@@ -1,0 +1,67 @@
+/*-----------------------------------------------------------------------------------------------------
+    [off-canvas]
+    
+    + off canvas
+    + body & wrapper
+    + overlay
+-------------------------------------------------------------------------------------------------------*/
+
+$menu_width   : 280px;
+
+.off-canvas {
+  @include mq(large) {
+    position: fixed;
+    height: 100%;
+    width: $menu_width;
+    z-index: 999;
+    transform: translateX(-$menu_width);
+  }
+}
+
+
+body {
+  &.no-scroll { 
+    @include mq(large) {
+      height: 100%; 
+      overflow: hidden; 
+      position: fixed; 
+    }
+  }
+
+  &.move-left  {
+    .wrapper { 
+      transform: translateX($menu_width);  
+    }
+  }
+  &.move-right {
+    .wrapper { 
+      transform: translateX(-$menu_width);  
+    }
+  }
+
+  .wrapper { 
+    @include transition(transform 0.4s); 
+    .move-left & {
+      transform: translateX($menu_width);  
+    }
+    .move-right & {
+      transform: translateX(-$menu_width);  
+    }
+  }
+}
+
+  
+.overlay { 
+  display: none; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(255, 255, 255, 0.8); 
+  z-index: 990;
+}
+
+
+
+

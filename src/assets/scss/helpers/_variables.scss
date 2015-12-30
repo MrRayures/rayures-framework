@@ -1,0 +1,31 @@
+/*-----------------------------------------------------------------------------------------------------
+    [variables]
+    
+    + Neat
+    + Breackpoint
+    + Typo
+-------------------------------------------------------------------------------------------------------*/
+/* Neat Overrides */
+$grid-columns       : 12;
+$max-width          : 1180px;
+$gutter             : em(20); //Environ 20px
+
+/* Breackpoint */
+$xsmall   : 450px; 
+$small    : 767px; 
+$medium   : 960px;
+$large    : 1200px;
+$xlarge   : 1600px;
+
+$bps: (
+  xsmall  : "only screen and (max-width: " + $xsmall + ")",
+  small   : "only screen and (max-width: " + $small + ")",
+  medium  : "only screen and (max-width: " + $medium + ")",
+  large   : "only screen and (max-width: " + $large + ")",
+  xlarge  : "only screen and (max-width: " + $xlarge + ")",
+);
+
+
+/* Typo */
+$arial        : Arial, Helvetica, Arial, sans-serif;
+$georgia      : Georgia, "Times New Roman", Times, serif;

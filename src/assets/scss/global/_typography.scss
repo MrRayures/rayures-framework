@@ -1,0 +1,48 @@
+/*-----------------------------------------------------------------------------------------------------
+    [typography]
+-------------------------------------------------------------------------------------------------------*/
+
+body {  
+  font-family: $arial; 
+  font-size: 14px; 
+  color: $body-font;
+  line-height: 140%;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: $title-font; 
+  margin: 0; 
+  line-height: 140%; 
+}
+
+h1, .h1-like { 
+  font-size: 20px; 
+  @include mq(small) {
+    font-size: 20px; 
+  }
+}
+h2, .h2-like { 
+  font-size: 18px; 
+  @include mq(small) {
+    font-size: 18px;
+  }
+}
+h3, .h3-like { 
+  font-size: 16px; 
+  @include mq(small) {
+    font-size: 16px;
+  }
+}
+h4, .h4-like { 
+  font-size: 14px; 
+  @include mq(small) {
+    font-size: 14px;
+  }
+}
+h5, .h5-like { 
+  font-size: 14px; 
+}
+h6, .h6-like { 
+  font-size: 14px; 
+}
+

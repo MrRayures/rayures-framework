@@ -1,0 +1,30 @@
+/*-----------------------------------------------------------------------------------------------------
+    [Grid]
+    
+    A grid with NEAT
+    DOC : http://thoughtbot.github.io/neat-docs/latest/
+
+-------------------------------------------------------------------------------------------------------*/
+
+.container {
+  padding: 0 10px;
+  @include outer-container();
+}
+
+.row  {
+  @include row();
+}
+
+.omega {
+  @include omega();
+}
+
+@include mq(small) {
+  @for $i from 1 through $grid-columns {
+    .grid_#{$i} {
+      @include span-columns($i);
+    }
+  }
+}
+
+

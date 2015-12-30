@@ -1,0 +1,28 @@
+/*-----------------------------------------------------------------------------------------------------
+    [Buttons]
+
+    + Primary
+    + Secondary
+-------------------------------------------------------------------------------------------------------*/
+
+.primary-btn,
+.secondary-btn {
+  &:hover {}
+  &:active {}
+}
+
+
+/* === Primary === */
+.primary-btn {
+  @include transition();
+  &:hover {}
+  &:active {}
+}
+
+
+/* === Secondary === */
+.secondary-btn {
+  @include transition();
+  &:hover {}
+  &:active {}
+}
