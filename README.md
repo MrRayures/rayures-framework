@@ -1,6 +1,6 @@
 # Rayures framework
 
-A simple html/scss framework powered by Gulp for my projects.
+A simple html/css framework powered by Sass, Bower & Gulp for my projects.
 
 - - -
 
@@ -34,13 +34,5 @@ Development task
 
 Production task 
 
-    gulp build
+    gulp prod
 
-Commit and push sources to your repository
-
-    git commit -am "commit-message"
-    git push origin master
-
-Deploy on gh-pages (if command line show any error, simply run `gulp clean` and run again previous command)
-
-    gulp deploy
