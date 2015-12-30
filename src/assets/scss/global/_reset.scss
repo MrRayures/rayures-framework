@@ -84,7 +84,7 @@ table {
 }
 
 /* orientation iOS font-size fix */
-@media (orientation: landscape) and (max-device-width: $small_breakpoint) {
+@media (orientation: landscape) and (max-device-width: $small) {
   html,
   body {
     -webkit-text-size-adjust: 100%;
