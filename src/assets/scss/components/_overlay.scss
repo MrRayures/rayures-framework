@@ -1,14 +1,14 @@
 /*-----------------------------------------------------------------------------------------------------
-    [Grid]
+    [overlay]
 -------------------------------------------------------------------------------------------------------*/
-.container {
-  padding: 0 10px;
-  max-width: $max-width;
-  margin: 0 auto;
+.overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-
-/*
-* [TODO] Flexbox
-*/
-
 

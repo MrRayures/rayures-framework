@@ -1,18 +1,18 @@
 /*-----------------------------------------------------------------------------------------------------
     [typography]
 -------------------------------------------------------------------------------------------------------*/
-
 body {  
   font-family: $arial; 
   font-size: 14px; 
-  color: $body-font;
+  color: $text-color;
   line-height: 140%;
 }
 
 h1, h2, h3, h4, h5, h6 { 
-  color: $title-font; 
+  font-family: $arial;
+  color: $title-color; 
   margin: 0; 
-  line-height: 140%; 
+  line-height: 100%; 
 }
 
 h1, .h1-like { 

@@ -1,0 +1,43 @@
+/*-----------------------------------------------------------------------------------------------------
+    [carousel]
+-------------------------------------------------------------------------------------------------------*/
+.carousel {
+	position: relative;
+	.slick-slide {
+		img {
+			width: 100%;
+		}
+	}
+	.slick-arrow {
+		position: absolute;
+		z-index: 99;
+		top: 50%;
+		width: 50px;
+		height: 50px;
+		background: none;
+		border: none;
+		margin-top: -25px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.3s;
+		[class*="icon-"] {
+			transition: all 0.3s;
+			font-size: 30px;
+			color: #FFF;
+		}
+		&:hover {
+			[class*="icon-"] {
+				color: $primary;
+			}
+		}
+		&.slick-prev {
+			left: 10px;
+		}
+		&.slick-next {
+			right: 10px;
+		}
+	}
+	&.carousel-home {}
+}

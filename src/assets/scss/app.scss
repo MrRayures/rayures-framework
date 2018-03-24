@@ -3,12 +3,10 @@
 		by : mr-rayures.com
     Version : 1.0
 
-    Projet : 
-    Website : 
+    Projet : Scutella
+    Website : scutella.fr
   
 -------------------------------------------------------------------------------------------------------*/
-
-@import "../vendor/bourbon/app/assets/stylesheets/bourbon";
 
 @import "helpers/_variables";
 @import "helpers/_mixins";
@@ -22,14 +20,17 @@
 @import "global/_commons";
 
 @import "components/_buttons";
-@import "components/_forms";
+@import "components/_overlay";
+@import "components/_form";
 @import "components/_icons";
 @import "components/_breadcrumb";
 @import "components/_pagination";
+@import "components/_carousel";
 
 @import "modules/_header";
 @import "modules/_footer";
 @import "modules/_nav";
-//@import "modules/_off-canvas";
 
+@import "layout/_page";
 @import "layout/_homepage";
+

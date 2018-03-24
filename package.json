@@ -15,6 +15,8 @@
   "devDependencies": {
     "gulp": "latest",
     "gulp-load-plugins": "latest",
+    "gulp-clean": "latest",
+    "gulp-webserver": "latest",
     "gulp-rename": "latest",
     "gulp-csso": "latest",
     "gulp-sass": "latest",
@@ -23,6 +25,12 @@
     "gulp-autoprefixer": "latest",
     "gulp-html-extend": "latest",
     "gulp-uglify": "latest",
-    "gulp-imagemin": "latest"
+    "gulp-concat": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-real-favicon": "latest",
+    "gulp-iconfont": "latest",
+    "gulp-iconfont-css": "latest",
+    "gulp-plumber": "latest",
+    "gulp-notify": "latest"
   }
 }

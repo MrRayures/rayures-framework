@@ -1,0 +1,324 @@
+/*-----------------------------------------------------------------------------------------------------
+    [Forms]
+-------------------------------------------------------------------------------------------------------*/
+/*
+* Reset
+*/
+input[type="password"]::-ms-clear, input[type="password"]::-ms-reveal { display: none; }
+button, input[type="submit"] { cursor: pointer; } 
+button:focus {outline:0;}
+
+/*
+* Basics
+*/
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"],
+form textarea,
+form select {
+  font-size: 1.4em;
+  border: 2px solid $border-color;
+  background: #FFF;
+  padding: 0 10px;
+  width: 100%;
+  height: 40px;
+  color: $text-color;
+  -webkit-border-radius: 0; 
+  -webkit-appearance: none !important;
+}
+
+
+form input:disabled {
+  background: $grey-light;
+  box-shadow: none;
+  font-style: italic;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form select:focus {
+  border-color: $primary;
+}
+
+form textarea {
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+  vertical-align: top;
+}
+
+
+
+/*
+* Control
+*/
+
+.form-content {
+  .control-group {}
+  
+  .control-label {}
+  .control-input {}
+  .control-input {}
+  .control-submit {}
+}
+
+
+
+/*
+* Error
+*/
+.form-content {
+  .control-group {
+    &.error {
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="date"] {
+         border-color: #c90400;
+      }
+    }
+  }
+  .control-error {
+    color: #c90400;
+  }
+}
+
+
+
+/* Custom Checkbox & Radio
+* DOC : http://www.creativejuiz.fr/blog/tutoriels/personnaliser-aspect-boutons-radio-checkbox-css
+*/
+body:not(.lt-ie9) {
+  .custom-checkbox,
+  .custom-radio {
+    line-height: 100%;
+    input[type="radio"],
+    input[type="checkbox"] {
+      position: absolute;  
+      left: -9999px;  
+      + label {
+        position: relative; 
+        padding: 0px 0 0 30px; 
+        cursor: pointer; 
+        line-height: 120%;
+        margin: 0;
+        &:before {
+          content: '';  
+          position: absolute;  
+          left: 0px; 
+          top: 0; 
+          width: 18px; 
+          height: 18px; 
+          border: 1px solid #386cbc; 
+          background: #FFF; 
+          pointer-events: none;
+        }
+        &:after {
+          content: '';  
+          position: absolute;  
+          display: block;
+          transition: transform 200ms;
+          pointer-events: none;
+        }
+      }
+      &:not(:checked) {
+        + label {
+          &:after {
+            opacity: 0;  
+            transform: scale(0);
+          }
+        }
+      }
+      &:checked {
+        + label {
+          &:before {
+            border: 1px solid #386cbc; 
+          }
+          &:after {
+            opacity: 1; 
+            transform: scale(1);
+          }
+        }
+      }
+      &:disabled {
+        box-shadow: none;  
+        border-color: #bbb;  
+        background-color: #ddd; 
+        + label {
+          color: #aaa;  
+          &:before {
+            border: 1px solid #aaa; 
+          }
+          &:after {
+            color: #999; 
+          }
+        }
+      }
+    }
+    &.dark {
+      input[type="radio"],
+      input[type="checkbox"] {
+        + label {
+           &:before {
+            border-color: #002e60; 
+          }
+        }
+        &:checked {
+          + label {
+            &:before {
+               border-color: #002e60; 
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .custom-checkbox {
+    input[type="checkbox"] {
+      + label {
+        &:before {
+          border-radius: 4px;
+        }
+        &:after {
+          top: 0px; 
+          left: 0px;
+          width: 18px;
+          height: 18px;
+          background: url('../../../images/icon-tick.svg') no-repeat center center;
+          background-size: 12px auto;
+        }
+      }
+      &:checked {
+        + label {
+          &:before {
+            background: #386cbc; 
+          }
+        }
+      }
+    }
+    &.dark {
+      input[type="checkbox"] {
+        &:checked {
+          + label {
+            &:before {
+              background: #002e60; 
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .custom-radio {
+    input[type="radio"] {
+      + label {
+        &:before {
+          border-radius: 20px;
+        }
+        &:after {
+          content: '';
+          top: 50%;
+          left: 5px;
+          width: 8px;
+          height: 8px;
+          margin-top: -3px;
+          background: #386cbc;
+          border-radius: 10px;
+        }
+      }
+    }
+    &.dark {
+      input[type="radio"] {
+        + label {
+          &:after {
+            background: #002e60; 
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Custom select pointer
+*  DOC : Filament Group | Doc : https://github.com/filamentgroup/select-css/
+*/
+.custom-select {
+  position: relative;
+  display: block;
+  border: 1px solid $border-color;
+  max-width: 470px;
+  padding-right: 20px;
+  background: #FFF;
+  overflow: hidden;
+  [class*="icon-"] {
+    position: absolute;
+    margin-top:-9px;
+    top: 50%;
+    right: 0.8em;
+    pointer-events: none;
+    &:before {
+      color: #2f2f2f;
+      pointer-events: none;
+    }
+  }
+  select {
+    padding: 5px 8px;
+    width: 130%;
+    height: 100%;
+    line-height: 140%;
+    margin:0;
+    background: #FFF;
+    border: 1px solid transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  &:hover {
+    border-color: $grey-darker;
+  }
+  select {
+    &:focus {
+      outline:none;
+    }
+    option {
+      font-weight:normal;
+    }
+  }
+}
+
+.ie9 {
+  .custom-select {
+    padding-right: 0;
+    .icon-arrow-down {
+      display: none;
+    }
+    select {
+      width: 100%;
+    }
+  }
+}
+
+/* START OF UGLY BROWSER-SPECIFIC HACKS */
+x:-o-prefocus, .custom-select::after { display:none; }    
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  .custom-select select::-ms-expand {display: none; } 
+  .custom-select select:focus::-ms-value { background: transparent; color: #222; } 
+}
+@-moz-document url-prefix() { 
+  .custom-select { overflow: hidden; } 
+  .custom-select select { width: 120%; width: -moz-calc(99% + 3em); width: calc(100% + em); }
+}
+.custom-select select:-moz-focusring {color: transparent; text-shadow: 0 0 0 #000; }
+

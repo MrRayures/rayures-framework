@@ -1,8 +1,64 @@
 /*-----------------------------------------------------------------------------------------------------
     [nav]
 -------------------------------------------------------------------------------------------------------*/
+.nav-content {
+	.close-menu {
+		@include mq(medium) {
+			display: block;
+			position: fixed;
+			z-index: 999;
+			top: 0;
+			right: 0;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.3s;
+			&.active {
+				visibility: visible;
+				opacity: 1;
+				transform: rotate(180deg);
+			}
+		}
+	}
+	.main-menu {
+		@include mq(medium) {
+			//display: none;
+			visibility: hidden;
+			opacity: 0;
+			transform: translateX(-280px);
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 280px;
+			height: 100%;
+			background: $primary;
+			z-index: 999;
+			transition: all 0.3s;
+			&.active {
+				visibility: visible;
+				opacity: 1;
+				transform: translateX(0px);
+			}
+		}
+		ul {
+			display: flex;
+			align-items: center;
+			@include mq(medium) {
+				overflow-y: scroll;
+				display: block;
+			}
+			li {
+				position: relative;
+				a {
+					&:hover {}
+				}
+				&.current-menu-item {
+					a {}
+				}
+			}
+		}
+	}
+}
 
-.main-menu {}
 
 
 

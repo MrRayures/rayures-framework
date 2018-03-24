@@ -1,28 +1,36 @@
 /*-----------------------------------------------------------------------------------------------------
     [Buttons]
-
-    + Primary
-    + Secondary
 -------------------------------------------------------------------------------------------------------*/
 
-.primary-btn,
-.secondary-btn {
+.button {
+  transition: all .3s;
   &:hover {}
   &:active {}
+  &.primary {}
+  &.secondary {}
 }
 
 
-/* === Primary === */
-.primary-btn {
-  @include transition();
-  &:hover {}
-  &:active {}
+/* === Menu === */
+.button-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  [class*="icon-"] {
+    color: #FFF;
+    font-size: 20px;
+  }
+  &.open-menu {
+    @include mq(medium) {
+      display: flex;
+    
+    }
+  }
+  &.close-menu {}
 }
 
-
-/* === Secondary === */
-.secondary-btn {
-  @include transition();
-  &:hover {}
-  &:active {}
-}

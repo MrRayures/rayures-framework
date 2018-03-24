@@ -1,3 +1,82 @@
-/*-----------------------------------------------------------------------------------------------------
-    [icons]
--------------------------------------------------------------------------------------------------------*/
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+		//url('../fonts/icons.woff2') format('woff2'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype'),
+		url('../fonts/icons.svg#icons') format('svg');
+}
+
+[class*="icon-"]:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-arrow-down:before {
+	content: "\E001";
+}
+
+.icon-arrow-left:before {
+	content: "\E002";
+}
+
+.icon-arrow-right:before {
+	content: "\E003";
+}
+
+.icon-arrow-up:before {
+	content: "\E004";
+}
+
+.icon-cart:before {
+	content: "\E005";
+}
+
+.icon-close:before {
+	content: "\E006";
+}
+
+.icon-download:before {
+	content: "\E007";
+}
+
+.icon-facebook:before {
+	content: "\E008";
+}
+
+.icon-instagram:before {
+	content: "\E009";
+}
+
+.icon-menu:before {
+	content: "\E00A";
+}
+
+.icon-rss:before {
+	content: "\E00B";
+}
+
+.icon-search:before {
+	content: "\E00C";
+}
+
+.icon-twitter:before {
+	content: "\E00D";
+}
+
+.icon-user:before {
+	content: "\E00E";
+}
+
+.icon-youtube:before {
+	content: "\E00F";
+}
