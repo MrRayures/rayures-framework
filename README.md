@@ -1,5 +1,6 @@
 # Rayures framework
 
+https://travis-ci.org/MrRayures/rayures-framework.svg?branch=master
 [![Greenkeeper badge](https://badges.greenkeeper.io/MrRayures/rayures-framework.svg)](https://greenkeeper.io/)
 
 A simple html/css framework powered by Sass, Bower & Gulp for my projects.
